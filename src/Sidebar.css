@@ -1,0 +1,55 @@
+.sideBar {
+    flex: 0.35;
+    display: flex;
+    flex-direction: column;
+}
+.sideBar__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-right: 1px solid lightgray;
+}
+.sideBar__headerRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 10vw;
+}
+.sideBar__headerRight > .MuiSvgIcon-root {
+    margin-right: 2vw;
+    font-size: 24px !important;
+}
+.sideBar__search {
+    display: flex;
+    align-items: center;
+    height: 39px;
+    padding: 10px;
+    background-color: #f6f6f6;
+}
+.sideBar__searchContainer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+}
+.sideBar__searchContainer > .MuiSvgIcon-root {
+    color: gray;
+    padding: 10px;
+}
+.sideBar__searchContainer > input {
+    flex: 1;
+    border: none;
+    margin-left: 10px;
+}
+.addNewChat {
+   text-align: center;
+   margin: 10px 0;
+   cursor: pointer;
+}
+.sideBar__chat {
+    background-color: white;
+    flex: 1;
+    overflow: scroll;
+}

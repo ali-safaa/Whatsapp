@@ -1,0 +1,24 @@
+.login {
+    display: grid;
+    place-items: center;
+}
+.login__container {
+    display: grid;
+}
+.login__container > img {
+    margin: 40px 0;
+    margin-left: 20px;
+}
+.login__container > button {
+    width: fit-content;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.login__container > button:hover{
+    color: white;
+    background-color: blue;
+}
