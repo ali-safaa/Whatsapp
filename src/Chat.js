@@ -22,10 +22,10 @@ function Chat() {
 
     useEffect(() => {
         if(roomId){
-            db.collection('rooms').doc(roomId).onSnapshot((snapshot) =>
+            db.collection('rooms').doc(roomId).onSnapshot(snapshot =>
                 setRoomName(snapshot.data().name));
-                db.collection('rooms')
                 
+            db.collection('rooms')
             .doc(roomId)
             .collection('messages')
             .orderBy('timestamp', 'asc')
@@ -57,7 +57,7 @@ function Chat() {
             <Avatar src={`https://avatars.dicebear.com/api/avataaars/${seed}.svg`}/>
                 <div className="chatHeader__info">
                     <h4>{roomName}</h4>
-                    <p>last seen at ...</p>
+                    <p>last seen at {" "}{new Date(texts[texts.length -1]?.timestamp?.toDate()).toUTCString()}</p>
                 </div>
                 <div className="chatHeader__right">
                     <IconButton>
@@ -75,7 +75,7 @@ function Chat() {
                 {texts && texts.map(text => {
                     const { name, message, timestamp } = text;
                     return (
-                        <p className={`chat__message ${ true && `chat__receiver`}`}>
+                        <p className={`chat__message ${ name === user.displayName && `chat__receiver`}`}>
                            <span className="chat__name">{name}</span>
                                {message}
                             <span className="chat__timeStamp">
