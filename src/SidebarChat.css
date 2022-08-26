@@ -1,10 +1,10 @@
 .sidebarChat {
-    display: flex;
-    padding: 20px;
-    cursor: pointer;
-    border-bottom: 1px solid lightgray;
-    transition: all 0.5s ease-out;
+  display: flex;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid lightgray;
+  transition: all 0.5s ease-out;
 }
 .sidebarChat:hover {
-    background-color: #ebebeb;
+  background-color: #ebebeb;
 }

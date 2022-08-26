@@ -1,13 +1,20 @@
 .app {
-    background-color: #dadbd3;
-    height: 100vh;
-    display: grid;
-    place-items: center;
+  background-color: #dadbd3;
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 .app__body {
-    background-color: #ededed;
-    display: flex;
-    height: 90vh;
-    width: 90vw;
-    box-shadow: -1px 4px 20px -6px rgba(0,0,0, 0.75)
+  background-color: #ededed;
+  display: flex;
+  height: 90vh;
+  width: 90vw;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (min-width: 422px) {
+  .fa-bars {
+    margin: 15px 15px;
+    cursor: pointer;
+  }
 }

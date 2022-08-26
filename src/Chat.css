@@ -1,73 +1,102 @@
-.chat {
+.chat__header {
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+.chatHeader__info {
+  flex: 1;
+  padding-left: 20px;
+  display: grid;
+  align-items: center;
+}
+.avatar {
+  width: 40px;
+}
+.chatHeader__info > p {
+  font-size: 13px;
+  color: gray;
+}
+.fa-face-smile {
+  color: rgb(127, 121, 121);
+  font-size: 20px;
+  margin-right: 15px;
+}
+.chat__body {
+  background-image: url('https://cdn.wallpapersafari.com/91/2/DExBhK.jpg');
+  flex: 1;
+  padding: 30px;
+  overflow: scroll;
+}
+
+.chat__name {
+  position: absolute;
+  top: -17px;
+  color: white;
+  font-size: small;
+  font-weight: bold;
+}
+.chat__message {
+  position: relative;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.chat__receiver {
+  margin-left: auto;
+  background-color: #dcf8c6;
+}
+.chat__timeStamp {
+  margin-left: 10px;
+  font-size: 13px;
+  color: gray;
+}
+.chat__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+  height: 62px;
+}
+.chat__footer > form {
+  flex: 1;
+  display: flex;
+}
+.chat__footer > form > input {
+  flex: 1;
+  border: none;
+  height: fit-content;
+  padding: 8px 10px;
+  outline: none;
+  border-radius: 10px;
+}
+.chat__footer > form > button {
+  border: none;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+.fa-search {
+  margin-right: 15px;
+}
+.fa-microphone {
+  margin: 0 15px;
+}
+
+@media screen and (min-width: 422px) {
+  .chat {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 600px) {
+  .chat {
     flex: 0.65;
     display: flex;
     flex-direction: column;
-}
-.chat__header {
-    display: flex;
-    padding-left: 10px;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-}
-.chatHeader__info {
-    flex: 1;
-    padding-left: 20px;
-}
-.chatHeader__info > p {
-    font-size: 13px;
-    color: gray;
-}
-.chat__body {
-    background-image: url("https://cdn.wallpapersafari.com/91/2/DExBhK.jpg");
-    flex: 1;
-    padding: 30px;
-    overflow: scroll;
-}
-.chat__name {
-    position: absolute;
-    top: -17px;
-    color: white;
-    font-size: small;
-    font-weight: bold;
-}
-.chat__message {
-    position: relative;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-    width: fit-content;
-    margin-bottom: 20px;
-}
-.chat__receiver {
-    margin-left: auto;
-    background-color: #dcf8c6;
-}
-.chat__timeStamp {
-    margin-left: 10px;
-    font-size: 13px;
-    color: gray;
-}
-.chat__footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid lightgray;
-    height: 62px;
-}
-.chat__footer > form {
-    flex: 1;
-    display: flex;
-}
-.chat__footer > form > input {
-    flex: 1;
-    border: none;
-    height: fit-content;
-    padding: 8px 10px;
-    outline: none;
-}
-.chat__footer > form > button {
-    border: none;
-    color: gray;
-    font-weight: bold;
-    cursor: pointer;
+    width: 700px;
+  }
 }
