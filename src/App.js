@@ -16,11 +16,11 @@ function App() {
       ) : (
         <div className="app__body">
           <i
-            onClick={open ? () => setOpen(false) : () => setOpen(true)}
+            onClick={!open ? () => setOpen(true) : () => setOpen(false)}
             className="fas fa-bars"
           ></i>
           <Router>
-            {open && <Sidebar setOpen={setOpen} />}
+            {!open && <Sidebar setOpen={setOpen} />}
             <Switch>
               <Route path="/rooms/:roomId">
                 <Chat />

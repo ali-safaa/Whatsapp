@@ -30,7 +30,7 @@ function Sidebar({ setOpen }) {
             <DonutLargeIcon />
           </IconButton>
           <IconButton>
-            <i onClick={() => setOpen(false)} className="fas fa-close"></i>
+            <i onClick={() => setOpen(true)} className="fas fa-close"></i>
           </IconButton>
         </div>
       </div>
