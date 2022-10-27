@@ -24,13 +24,10 @@ function Sidebar({ setOpen }) {
   return (
     <div className="sideBar">
       <div className="sideBar__header">
-        <Avatar src={user?.photoURL} />
         <div className="sideBar__headerRight">
+          <Avatar style={{ cursor: 'pointer' }} src={user?.photoURL} />
           <IconButton>
             <DonutLargeIcon />
-          </IconButton>
-          <IconButton>
-            <i onClick={() => setOpen(true)} className="fas fa-close"></i>
           </IconButton>
         </div>
       </div>

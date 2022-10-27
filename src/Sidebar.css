@@ -1,17 +1,10 @@
-.sideBar__header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  border-right: 1px solid lightgray;
-}
 .sideBar__headerRight {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 10vw;
+  padding: 10px 15px;
 }
 .sideBar__headerRight > .MuiSvgIcon-root {
-  margin-right: 2vw;
   font-size: 24px !important;
 }
 .sideBar__search {
@@ -37,6 +30,7 @@
   flex: 1;
   border: none;
   margin-left: 10px;
+  outline: none;
 }
 .addNewChat {
   text-align: center;
